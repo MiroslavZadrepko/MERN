@@ -7,7 +7,7 @@ const app = express();
  
 app.use(cors());
 app.use(express.json())
-app.use('/posts', postRoutes)
+app.use('/', postRoutes)
 
 const DB_URI = 'mongodb+srv://root:root@cluster0.pp3mm.mongodb.net/test';
 const PORT = process.env.PORT || 5000;
