@@ -6,29 +6,29 @@ import { Container, AppBar, Typography, Grow, Grid } from '@material-ui/core';
 function App() {
   return (
     <Container maxwidth="lg" >
+     
+        <AppBar position='static' color='inherit'>
+          <Typography variant='h2' align='center'>Memories</Typography>
+          <p align='center'>
+            <img src='https://raw.githubusercontent.com/adrianhajdin/project_mern_memories/master/client/src/images/memories.png?token=AF56X74XONEUGZ4FD2FUIA27UURPI' width={60} alt="icon" />
+          </p>
+        </AppBar>
 
-      <AppBar position='static' color='inherit'>
-        <Typography variant='h2' align='center'>Memories</Typography>
-        <p align='center'>
-          <img src='https://raw.githubusercontent.com/adrianhajdin/project_mern_memories/master/client/src/images/memories.png?token=AF56X74XONEUGZ4FD2FUIA27UURPI' width={60} alt="icon" />
-        </p>
-      </AppBar>
+        <Grow in>
+          <Container>
+            <Grid container justifyContent='space-between' alignItems='stretch' spacing={2} >
 
-      <Grow in>
-        <Container>
-          <Grid container justifyContent='space-between' alignItems='stretch' spacing={2} >
+              <Grid item xs={6} xm={6}>
+                <Posts />
+              </Grid>
 
-            <Grid item xs={6} xm={6}>
-              <Posts />
+              <Grid item xs={6} xm={4}>
+                <Form />
+              </Grid>
+
             </Grid>
-
-            <Grid item xs={6} xm={4}>
-              <Form />
-            </Grid>
-
-          </Grid>
-        </Container>
-      </Grow>
+          </Container>
+        </Grow>
 
     </Container>
   );
