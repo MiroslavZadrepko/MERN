@@ -4,10 +4,10 @@ import Post from './Post/Post';
 function Posts() {
   return (
     <>
-    <h1>Posts</h1>
-    <Post/>
+      <h1>Posts</h1>
+      <Post />
     </>
-    
+
   )
 }
 
